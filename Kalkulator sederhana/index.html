@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klakulator By Thoriq</title>
+    <style>
+        * {
+            font-family: arial;
+        }
+
+        body {
+        background-color: khaki;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li:hover {
+            background-color: silver;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        li>a {
+            text-decoration: none;
+            color:black;
+        }
+
+        ul {
+            text-align: center;
+            justify-content: space-evenly;
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Kalkulator sederhana</h1>
+        <p>Web ini dibuat oleh Thoriq Mulyadi😎</p>
+    </center>
+    <hr>
+    <div>
+        <ul>
+            <li><a href="#" onclick="jumlah()">Penjumlahan</a></li>
+            <br>
+            <li><a href="#" onclick="kurang()">Pengurangan</a></li>
+            <br>
+            <li><a href="#" onclick="kali()">Perkalian</a></li>
+            <br>
+            <li><a href="#" onclick="bagi()">Pembagian</a></li>
+        </ul>
+    </div>
+    <hr>
+<script>
+    function jumlah() {
+        let angka1 = parseInt(prompt("Masukkan angka pertama:"));
+        let angka2 = parseInt(prompt("Ditambah dengan angka apa?"));
+        let hasil = angka1 + angka2;
+        alert("Hasil penjumlahan: " + hasil);
+    }
+
+    function kurang() {
+        let angka1 = parseInt(prompt("Masukkan angka pertama:"));
+        let angka2 = parseInt(prompt("Dikurang dengan angka apa?"));
+        let hasil = angka1 - angka2;
+        alert("Hasil pengurangan: " + hasil);
+    }
+
+    function kali() {
+        let angka1 = parseInt(prompt("Masukkan angka pertama:"));
+        let angka2 = parseInt(prompt("Dikali dengan angka apa?"));
+        let hasil = angka1 * angka2;
+        alert("Hasil perkalian: " + hasil);
+    }
+
+    function bagi() {
+        let angka1 = parseInt(prompt("Masukkan angka pertama:"));
+        let angka2 = parseInt(prompt("Dibagi dengan angka apa?"));
+        let hasil = angka1 / angka2;
+        alert("Hasil pembagian: " + hasil);
+    }
+
+</script>
+</body>
+</html>
